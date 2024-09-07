@@ -31,7 +31,7 @@ void checkCreditCard(char *creditCard) {
     if (stringLength == 15 ||
         stringLength == 13 ||
         stringLength == 16) {
-        if (creditCard[0] == '4' && stringLength == 13 || creditCard[0] == '4' && stringLength == 16) {
+        if ((creditCard[0] == '4' && (stringLength == 13 || stringLength == 16))) {
             printf("VISA\n");
         }
         else if (stringLength == 15 && (creditCard[0] == '3' &&
