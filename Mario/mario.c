@@ -12,10 +12,10 @@ int main(void)
         printf("How tall should the obstacle be: \n");
         int result = scanf("%i", &height);
         if(result != 1 || height < 1 || height > 8){
+            int c;
             system("cls");
-            while (getchar() != '\n'){
             printf("Input must be of type Integer & must be within the range of 1 to and with 8, try again. \n");
-        }
+            while (c = getchar() != '\n'){}
     }
         else{
             printObstacle(height);
