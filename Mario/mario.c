@@ -48,7 +48,7 @@ void printObstacle(int height, int middleSeperation){
         // i starting index = 0
         // The number of dots decreases as i increases
         for(int j = 0; j < numofDots;  j++){
-            row[j] = '.';
+            row[j] = ' ';
         }
         // j starting index = nomofDots
         // The number of hashes increases as it goes down the rows
@@ -58,7 +58,7 @@ void printObstacle(int height, int middleSeperation){
             row[j] = '#';
         }
         else{
-            row[j] = '.';
+            row[j] = ' ';
         }
         }
         row[rowSize] = '\0';    // String null-terminator
