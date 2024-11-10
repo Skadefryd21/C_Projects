@@ -42,7 +42,7 @@ void printObstacle(int height, int middleSeperation){
         // i represents a count of each printed row
     for(int i = 0; i < height; i++){
         int rowSize = height * 2 + middleSeperation;
-        int numofDots = height- i - 1;
+        int numofDots = height - i - 1;
         int numofHashes = rowSize - numofDots;
         char *row = (char*)malloc((rowSize + 1) * sizeof(char));
         // i starting index = 0
@@ -50,7 +50,7 @@ void printObstacle(int height, int middleSeperation){
         for(int j = 0; j < numofDots;  j++){
             row[j] = ' ';
         }
-        // j starting index = nomofDots
+        // j starting index = numofDots
         // The number of hashes increases as it goes down the rows
         for(int j = numofDots; j < numofHashes; j++){
         // Since height defines the width of the left sided grid
